@@ -1,0 +1,21 @@
+
+Version 1.0.0 - September 20, 2015
+----------------------------------
+
+Initial release, altering the collision boxes of the following structures:
+
+-Solar Panels
+-Accumulators
+-Steam Engines
+-Pipes
+-Chests
+-Chemical Plants
+-Oil Refineries
+-Combinators
+-Boilers
+-Substations
+-Mining Drills
+-Pumpjacks
+-Pumps
+-Radar
+-Fluid Storage Tanks
