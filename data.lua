@@ -44,8 +44,6 @@ data.raw["mining-drill"]["basic-mining-drill"].collision_box = {{-1.25, -1.25}, 
 
 data.raw["mining-drill"]["pumpjack"].collision_box = {{-1.25, -1.25}, {1.25, 1.25}}
 
-data.raw["pump"]["small-pump"].collision_box = {{-0.08, -0.08}, {0.08, 0.08}}
-
 data.raw["radar"]["radar"].collision_box = {{-1.25, -1.25}, {1.25, 1.25}}
 
 data.raw["storage-tank"]["storage-tank"].collision_box = {{-1.25, -1.25}, {1.25, 1.25}}
