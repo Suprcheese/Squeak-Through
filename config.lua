@@ -76,5 +76,15 @@ exclusions =
 		}
 	},
 
+	{  -- Logistics Railway mod    ()
+		apply_when_object_exists = {
+			type = "logistic-container",
+			name = "requester-rail-dummy-chest",
+		},
+		excluded_prototype_names = {
+			"requester-rail-dummy-chest",
+		}
+	},
+
 }
 
