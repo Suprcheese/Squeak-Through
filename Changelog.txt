@@ -1,6 +1,5 @@
 Version 1.0.0 - September 20, 2015
 ----------------------------------
-
 Initial release, altering the collision boxes of the following structures:
 
 -Solar Panels
@@ -22,5 +21,34 @@ Initial release, altering the collision boxes of the following structures:
 
 Version 1.0.1 - March 22, 2016
 ------------------------------
-
 Removed the Small Pump's collision box change due to compatibility issues with other mods.
+
+
+Version 1.1.0 - April 10, 2016
+------------------------------
+Removed original (extremely simple) code and incorporated the more advanced code by Nommy: https://forums.factorio.com/viewtopic.php?p=114341#p114341
+Also incorporated Lupin's solution to some incompatibility issues with other mods: https://forums.factorio.com/viewtopic.php?p=146721#p146721
+This means that all structures of the following prototypes are affected by the mod now, including both vanilla and modded structures:
+
+-"solar-panel"
+-"accumulator"
+-"generator"
+-"pipe"
+-"pipe-to-ground"
+-"container"
+-"smart-container"
+-"logistic-container"
+-"assembling-machine"
+-"arithmetic-combinator"
+-"decider-combinator"
+-"constant-combinator"
+-"boiler"
+-"electric-pole"
+-"mining-drill"
+-"radar"
+-"storage-tank"
+-"tree"
+-"turret"
+-"beacon"
+-"furnace"
+-"lab"
