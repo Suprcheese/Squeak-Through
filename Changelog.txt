@@ -52,3 +52,11 @@ This means that all structures of the following prototypes are affected by the m
 -"beacon"
 -"furnace"
 -"lab"
+
+
+Version 1.1.1 - April 21, 2016
+------------------------------
+Moved config stuff out of data-final-fixes.lua into new config.lua file.
+Added ability to exclude prototypes by name or type conditionally in config.lua for mod compatibility.
+Added exclusions to make Nuclear Power and old versions of Rail Tanker compatible.
+Re-enabled "pump" shrinking (is disabled when Rail Tanker is loaded now).
