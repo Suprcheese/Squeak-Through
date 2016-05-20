@@ -60,3 +60,8 @@ Moved config stuff out of data-final-fixes.lua into new config.lua file.
 Added ability to exclude prototypes by name or type conditionally in config.lua for mod compatibility.
 Added exclusions to make Nuclear Power and old versions of Rail Tanker compatible.
 Re-enabled "pump" shrinking (is disabled when Rail Tanker is loaded now).
+
+
+Version 1.1.2 - May 20, 2016
+------------------------------
+Added exclusions to make Logistics Railway compatible.
