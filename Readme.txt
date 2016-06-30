@@ -1,7 +1,7 @@
-Squeak Through 1.1.2
+Squeak Through 1.1.3
 ====================
 
-Version 1.1.2 was released May 20, 2016, was tested using Factorio v0.12.33. It primarily features code by Nommy, with contribution from Lupin, and is maintained by Supercheese.
+Version 1.1.3 was released June 30, 2016, was tested using Factorio v0.13.1. It primarily features code by Nommy, with contribution from Lupin, and is maintained by Supercheese.
 
 This small mod reduces the collision boxes for many structures, allowing you to "squeak through" them while walking around your base.
 Say goodbye to the frustration of having your path blocked by your steam engines or solar panels when walking around your base!

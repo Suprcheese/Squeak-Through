@@ -11,7 +11,6 @@ prototype_type_gap_requirements =
 	["pipe"]                    = 0.42,
 	["pipe-to-ground"]          = 0.42,
 	["container"]               = 0.25,
-	["smart-container"]         = 0.25,
 	["logistic-container"]      = 0.25,
 	["assembling-machine"]      = 0.25,
 	["arithmetic-combinator"]   = 0.25,
