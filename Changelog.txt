@@ -70,3 +70,8 @@ Added exclusions to make Logistics Railway compatible.
 Version 1.1.3 - June 30, 2016
 -----------------------------
 Updated mod for Factorio 0.13.
+
+
+Version 1.1.4 - August 27, 2016
+-------------------------------
+Updated mod for Factorio 0.14.
