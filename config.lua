@@ -75,7 +75,7 @@ exclusions =
 		}
 	},
 
-	{  -- Logistics Railway mod    ()
+	{  -- Logistics Railway mod
 		apply_when_object_exists = {
 			type = "logistic-container",
 			name = "requester-rail-dummy-chest",
@@ -85,5 +85,15 @@ exclusions =
 		}
 	},
 
-}
+	{  -- Reactors mod
+		apply_when_object_exists = {
+			type = "assembling-machine",
+			name = "nuclear-reactor",
+		},
+		excluded_prototype_names = {
+			"nuclear-reactor",
+			"reactor-interface",
+		}
+	},
 
+}
