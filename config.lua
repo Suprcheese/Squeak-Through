@@ -1,6 +1,6 @@
 
--- Note: Any mods which define the collision box size of prototypes in data-final-fixes.lua will not be affected by this code if that mod loads after this one.
---       Prototypes normally defined in data.lua, or data-updates.lua will be loaded before this executes and be properly updated.
+-- Note: Any mods which define the collision box size of prototypes in data-final-fixes.lua will not be affected by this code.
+--       Prototypes normally defined in data.lua - or data-updates.lua loaded before this - will be properly updated.
 
 -- Table of prototype types to check and the minimum gap required to allow walking in between them. Tiles are 0.5 wide. Can be set to a large value (e.g 1000) create the smallest possible collision box {{0,0},{0,0}}.
 prototype_type_gap_requirements =
@@ -22,7 +22,7 @@ prototype_type_gap_requirements =
 	["pump"]                    = 0.42,
 	["radar"]                   = 0.25,
 	["storage-tank"]            = 0.25,
-	["tree"]                    = 0.25,
+	["tree"]                    = 0.42,
 	["turret"]                  = 0.25,
 	["beacon"]                  = 0.25,
 	["furnace"]                 = 0.25,
