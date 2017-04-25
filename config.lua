@@ -10,6 +10,9 @@ prototype_type_gap_requirements =
 	["generator"]               = 0.25,
 	["pipe"]                    = 0.42,
 	["pipe-to-ground"]          = 0.42,
+	["heat-pipe"]		        = 0.25,
+	["reactor"]			        = 0.48,
+	["programmable-speaker"]    = 0.25,
 	["container"]               = 0.25,
 	["logistic-container"]      = 0.25,
 	["assembling-machine"]      = 0.25,
@@ -65,35 +68,15 @@ exclusions =
 		}
 	},
 
-	{  -- RailTanker mod needs vanilla sized pumps (RailTanker version 1.1.3 and later includes compatibility for squeak through).
-		apply_when_object_exists = {
-			type = "cargo-wagon",
-			name = "rail-tanker"
-		},
-		excluded_prototype_types = {
-			"pump"
-		}
-	},
-
-	{  -- Logistics Railway mod
-		apply_when_object_exists = {
-			type = "logistic-container",
-			name = "requester-rail-dummy-chest",
-		},
-		excluded_prototype_names = {
-			"requester-rail-dummy-chest",
-		}
-	},
-
-	{  -- Reactors mod
-		apply_when_object_exists = {
-			type = "assembling-machine",
-			name = "nuclear-reactor",
-		},
-		excluded_prototype_names = {
-			"nuclear-reactor",
-			"reactor-interface",
-		}
-	},
+	-- {  -- Reactors mod
+		-- apply_when_object_exists = {
+			-- type = "assembling-machine",
+			-- name = "nuclear-reactor",
+		-- },
+		-- excluded_prototype_names = {
+			-- "nuclear-reactor",
+			-- "reactor-interface",
+		-- }
+	-- },
 
 }
