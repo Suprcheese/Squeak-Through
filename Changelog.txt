@@ -1,99 +1,99 @@
-Version 1.0.0 - September 20, 2015
-----------------------------------
-Initial release, altering the collision boxes of the following structures:
-
--Solar Panels
--Accumulators
--Steam Engines
--Pipes
--Chests
--Chemical Plants
--Oil Refineries
--Combinators
--Boilers
--Substations
--Mining Drills
--Pumpjacks
--Small Pumps
--Radar
--Fluid Storage Tanks
-
-
-Version 1.0.1 - March 22, 2016
-------------------------------
-Removed the Small Pump's collision box change due to compatibility issues with other mods.
-
-
-Version 1.1.0 - April 10, 2016
-------------------------------
-Removed original (extremely simple) code and incorporated the more advanced code by Nommy: https://forums.factorio.com/viewtopic.php?p=114341#p114341
-Also incorporated Lupin's solution to some incompatibility issues with other mods: https://forums.factorio.com/viewtopic.php?p=146721#p146721
-This means that all structures of the following prototypes are affected by the mod now, including both vanilla and modded structures:
-
--"solar-panel"
--"accumulator"
--"generator"
--"pipe"
--"pipe-to-ground"
--"container"
--"smart-container"
--"logistic-container"
--"assembling-machine"
--"arithmetic-combinator"
--"decider-combinator"
--"constant-combinator"
--"boiler"
--"electric-pole"
--"mining-drill"
--"radar"
--"storage-tank"
--"tree"
--"turret"
--"beacon"
--"furnace"
--"lab"
-
-
-Version 1.1.1 - April 21, 2016
-------------------------------
-Moved config stuff out of data-final-fixes.lua into new config.lua file.
-Added ability to exclude prototypes by name or type conditionally in config.lua for mod compatibility.
-Added exclusions to make Nuclear Power and old versions of Rail Tanker compatible.
-Re-enabled "pump" shrinking (is disabled when Rail Tanker is loaded now).
-
-
-Version 1.1.2 - May 20, 2016
-----------------------------
-Added exclusions to make Logistics Railway compatible.
-
-
-Version 1.1.3 - June 30, 2016
------------------------------
-Updated mod for Factorio 0.13.
-
-
-Version 1.1.4 - August 27, 2016
--------------------------------
-Updated mod for Factorio 0.14.
-
-
-Version 1.1.5 - October 16, 2016
---------------------------------
-Added exclusions to make the Reactors mod compatible.
-Switched to data-updates.lua instead of data-final-fixes.lua.
-
-
-Version 1.1.6 - December 20, 2016
----------------------------------
-Tree collision boxes are now smaller by default.
-
-
-Version 1.1.7 - April 25, 2017
-------------------------------
-Updated for Factorio 0.15.
-Added relevant new 0.15 entity-types to config.lua.
-
-
-Version 1.1.8 - December 17, 2017
----------------------------------
-Updated for Factorio 0.16.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 17. 12. 2017
+  Changes:
+    - Updated for Factorio 0.16.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+Date: 25. 4. 2017
+  Changes:
+    - Updated for Factorio 0.15.
+    - Added relevant new 0.15 entity-types to config.lua.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 20. 12. 2016
+  Changes:
+    - Tree collision boxes are now smaller by default.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 16. 10. 2016
+  Changes:
+    - Added exclusions to make the Reactors mod compatible.
+    - Switched to data-updates.lua instead of data-final-fixes.lua.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 27. 8. 2016
+  Changes:
+    - Updated mod for Factorio 0.14.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 30. 6. 2016
+  Changes:
+    - Updated mod for Factorio 0.13.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 20. 5. 2016
+  Changes:
+    - Added exclusions to make Logistics Railway compatible.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 21. 4. 2016
+  Changes:
+    - Moved config stuff out of data-final-fixes.lua into new config.lua file.
+    - Added ability to exclude prototypes by name or type conditionally in config.lua for mod compatibility.
+    - Added exclusions to make Nuclear Power and old versions of Rail Tanker compatible.
+    - Re-enabled "pump" shrinking (is disabled when Rail Tanker is loaded now).
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 10. 4. 2016
+  Major Features:
+    - Removed original (extremely simple) code and incorporated the more advanced code by Nommy: https://forums.factorio.com/viewtopic.php?p=114341#p114341
+    - Also incorporated Lupin's solution to some incompatibility issues with other mods: https://forums.factorio.com/viewtopic.php?p=146721#p146721
+    - This means that all structures of the following prototypes are affected by the mod now, including both vanilla and modded structures:
+    - "solar-panel"
+    - "accumulator"
+    - "generator"
+    - "pipe"
+    - "pipe-to-ground"
+    - "container"
+    - "smart-container"
+    - "logistic-container"
+    - "assembling-machine"
+    - "arithmetic-combinator"
+    - "decider-combinator"
+    - "constant-combinator"
+    - "boiler"
+    - "electric-pole"
+    - "mining-drill"
+    - "radar"
+    - "storage-tank"
+    - "tree"
+    - "turret"
+    - "beacon"
+    - "furnace"
+    - "lab"
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 22. 3. 2016
+  Changes:
+    - Removed the Small Pump's collision box change due to compatibility issues with other mods.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0 - First public release
+Date: 20. 9. 2015
+  Major Features:
+    - Initial release, altering the collision boxes of the following structures:
+    - *Solar Panels
+    - *Accumulators
+    - *Steam Engines
+    - *Pipes
+    - *Chests
+    - *Chemical Plants
+    - *Oil Refineries
+    - *Combinators
+    - *Boilers
+    - *Substations
+    - *Mining Drills
+    - *Pumpjacks
+    - *Small Pumps
+    - *Radar
+    - *Fluid Storage Tanks
