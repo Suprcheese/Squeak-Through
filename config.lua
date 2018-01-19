@@ -26,7 +26,6 @@ prototype_type_gap_requirements =
 	["radar"]                   = 0.25,
 	["storage-tank"]            = 0.25,
 	["tree"]                    = 0.42,
-	["turret"]                  = 0.25,
 	["beacon"]                  = 0.25,
 	["furnace"]                 = 0.25,
 	["lab"]                     = 0.25
