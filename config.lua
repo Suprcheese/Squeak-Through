@@ -6,6 +6,8 @@
 prototype_type_gap_requirements =
 {
 	["solar-panel"]             = 0.25,
+	["simple-entity-with-owner"]= 0.25,
+	["simple-entity-with-force"]= 0.25,
 	["accumulator"]             = 0.25,
 	["generator"]               = 0.25,
 	["pipe"]                    = 0.42,
@@ -28,6 +30,7 @@ prototype_type_gap_requirements =
 	["tree"]                    = 0.42,
 	["beacon"]                  = 0.25,
 	["furnace"]                 = 0.25,
+	["lamp"]                    = 0.25,
 	["lab"]                     = 0.25
 }
 -- All defined prototypes of the types listed above will be checked in adjust_collision_boxes() and have their collision boxes reduced to form the specified gap where needed.

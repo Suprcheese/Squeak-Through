@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.9
-Date: 19. 12. 2017
+Version: 1.2.0
+Date: 20. 1. 2018
   Changes:
-    - Add dependency for compatibility with Merging Chests (bug reported by abordoli).
+    - Add additional entity types to fix unsqueaky Nixie Tubes (reported by abordoli).
+---------------------------------------------------------------------------------------------------
+Version: 1.1.9
+Date: 19. 1. 2018
+  Changes:
+    - Add dependency for compatibility with Merging Chests (reported by abordoli).
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8
 Date: 17. 12. 2017
