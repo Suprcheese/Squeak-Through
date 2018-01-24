@@ -26,7 +26,7 @@ local function exclusion_applies(exclusion)
 			return true
 		end
 	end
-	
+
 	-- The apply_when_object_exists object didn't exist (the mod which the exclusion was for is not active).
 	return false
 end
@@ -34,13 +34,13 @@ end
 
 -- Update the exclusion arrays by parsing an exclusion (from config.lua).
 local function apply_exclusion(exclusion)
-	
+
 	if exclusion.excluded_prototype_names then
 		for _,n in pairs(exclusion.excluded_prototype_names) do
 			excluded_prototype_names[n] = true
 		end
 	end
-	
+
 	if exclusion.excluded_prototype_types then
 		for _,t in pairs(exclusion.excluded_prototype_types) do
 			excluded_prototype_types[t] = true
@@ -61,22 +61,22 @@ end
 
 -- Returns a coordinate reduced where required to form the specified gap between it and the tile boundary.
 local function adjust_coordinate_to_form_gap(coordinate, required_gap)
-	
+
 	-- Treat all coordinates as positive to simplify calculations.
 	local is_negative_coordinate = (coordinate < 0)
 	if is_negative_coordinate then
 		coordinate = coordinate * -1
 	end
-	
+
 	local tile_width = 0.5
-	
+
 	-- Calculate the existing gap (how much space there is to the next tile edge or 0 when the coordinate lies on a tile edge).
 	local distance_past_last_tile_edge = coordinate % tile_width -- This is how far the collision box extends over any tile edge, and should be 0 for a perfect fit.
 	local existing_gap = 0
 	if distance_past_last_tile_edge > 0 then
 		existing_gap = (tile_width - distance_past_last_tile_edge)
 	end
-	
+
 	-- Reduce the coordinate to make the gap large enough if it is not already.
 	if existing_gap < required_gap then
 		coordinate = coordinate + existing_gap - required_gap
@@ -84,12 +84,12 @@ local function adjust_coordinate_to_form_gap(coordinate, required_gap)
 			coordinate = 0
 		end
 	end
-	
+
 	-- Make the coordinate negative again if it was originally negative.
 	if is_negative_coordinate then
 		coordinate = coordinate * -1
 	end
-	
+
 	return coordinate
 end
 
@@ -97,20 +97,27 @@ end
 -- Checks all existing prototypes listed in prototype_type_gap_requirements and reduces their collision box to make a gap large enough to walk though if it is not already.
 local function adjust_collision_boxes()
 	for prototype_type, required_gap in pairs(prototype_type_gap_requirements) do
-	
-		-- Don't shrink prototypes of this type if they've been excluded. 
+
+		-- Don't shrink prototypes of this type if they've been excluded.
 		if not prototype_type_excluded(prototype_type) then
 			for prototype_name, prototype in pairs(data.raw[prototype_type]) do
-			
+
 				-- If the prototype is not excluded and has a collision box then resize it.
 				if (not prototype_name_excluded(prototype_name)) and prototype["collision_box"] then
-				
-					for y=1,2 do
-						for x=1,2 do
-							prototype.collision_box[x][y] = adjust_coordinate_to_form_gap(prototype.collision_box[x][y], required_gap)
+
+					if prototype.collision_box.lefttop then
+							prototype.collision_box.lefttop[1] = adjust_coordinate_to_form_gap(prototype.collision_box.lefttop[1], required_gap)
+							prototype.collision_box.rightbottom[1] = adjust_coordinate_to_form_gap(prototype.collision_box.rightbottom[1], required_gap)
+							prototype.collision_box.lefttop[2] = adjust_coordinate_to_form_gap(prototype.collision_box.lefttop[2], required_gap)
+							prototype.collision_box.rightbottom[2] = adjust_coordinate_to_form_gap(prototype.collision_box.rightbottom[2], required_gap)
+					else
+						for y=1,2 do
+							for x=1,2 do
+								prototype.collision_box[x][y] = adjust_coordinate_to_form_gap(prototype.collision_box[x][y], required_gap)
+							end
 						end
 					end
-					
+
 				end
 			end
 		end
