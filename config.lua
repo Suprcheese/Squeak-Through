@@ -70,6 +70,23 @@ exclusions =
 		}
 	},
 
+    {  -- RealisticReactors mod
+       apply_when_object_exists = {
+          type = "reactor",
+          name = "realistic-reactor",
+       },
+       excluded_prototype_names = {
+          "realistic-reactor",
+          "realistic-reactor-start",
+          "realistic-reactor-2",
+          "realistic-reactor-3",
+          "realistic-reactor-4",
+          "realistic-reactor-interface",
+          "realistic-reactor-eccs",
+          "heat-pipe",
+       }
+    },
+
 	-- {  -- Reactors mod
 		-- apply_when_object_exists = {
 			-- type = "assembling-machine",
