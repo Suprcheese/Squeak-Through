@@ -102,8 +102,13 @@ local function adjust_collision_boxes()
 		if not prototype_type_excluded(prototype_type) then
 			for prototype_name, prototype in pairs(data.raw[prototype_type]) do
 
-				-- If the prototype is not excluded and has a collision box then resize it.
-				if (not prototype_name_excluded(prototype_name)) and prototype["collision_box"] then
+				-- If the prototype is not excluded and has a collision box, and if it does not opt out, then resize it.
+				local opts_out = false
+				if data.raw[prototype_type][prototype_name].squeak_behaviour == false then
+					opts_out = true
+					-- TODO: user setting to opt in or out, this constitutes opt-out
+				end
+				if (not opts_out) and (not prototype_name_excluded(prototype_name)) and prototype["collision_box"] then
 
 					if prototype.collision_box.lefttop then
 							prototype.collision_box.lefttop[1] = adjust_coordinate_to_form_gap(prototype.collision_box.lefttop[1], required_gap)
