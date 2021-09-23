@@ -31,7 +31,8 @@ prototype_type_gap_requirements =
 	["beacon"]                  = 0.25,
 	["furnace"]                 = 0.25,
 	["lamp"]                    = 0.25,
-	["lab"]                     = 0.25
+	["lab"]                     = 0.25,
+	["rocket-silo"]             = 0.25
 }
 -- All defined prototypes of the types listed above will be checked in adjust_collision_boxes() and have their collision boxes reduced to form the specified gap where needed.
 
