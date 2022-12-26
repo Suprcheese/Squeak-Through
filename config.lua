@@ -67,6 +67,16 @@ exclusions =
 			"steel-cleaner"
 		}
 	},
+	
+	{  -- Industrial Revolution 3
+		apply_when_object_exists = {
+			type = "furnace",
+			name = "steel-vaporiser"
+		},
+		excluded_prototype_names = {
+			"steel-vaporiser"
+		}
+	},
 
 	{  -- UraniumPower mod    (some test-entities display errors if altered so are excluded below)
 		apply_when_object_exists = {
