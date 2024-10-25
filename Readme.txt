@@ -1,7 +1,7 @@
-Squeak Through 1.8.2
+Squeak Through 1.9.0
 ====================
 
-Version 1.8.2 was released February 21, 2021, and was tested using Factorio v1.1.25.
+Version 1.9.0 was released October 25, 2024, and was tested using Factorio v2.0.1.
 It primarily features code by Nommy, with contribution from Lupin and Foxite, and is maintained by Supercheese, who is grateful for strong community support.
 
 This small mod reduces the collision boxes for many structures, allowing you to "squeak through" them while walking around your base.
