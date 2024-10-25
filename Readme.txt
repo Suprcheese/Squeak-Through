@@ -20,3 +20,7 @@ in the relevant entity prototype should suffice.
 
 
 See also the associated forum thread: http://www.factorioforums.com/forum/viewtopic.php?f=91&t=16476
+
+For future updates, I fully sanction the sequel Squeak Through 2 mod at this repo: https://github.com/CodeGreen0386/squeak-through-2
+
+Cheers all.
